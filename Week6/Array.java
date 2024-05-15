@@ -27,11 +27,13 @@ public class Array {
         mySecondArray[1]=20;
         mySecondArray[2]=100;
         mySecondArray[3]=20;
-
+        
+    
         /* Access/store in new  variable */
         int arrayElement = mySecondArray[0];
         System.out.println("first index" + arrayElement);
         System.out.println("second Index" +mySecondArray[1]);
+        System.out.println(myThirdArray[2]);
 
     }
 }
