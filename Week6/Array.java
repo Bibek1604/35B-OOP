@@ -18,15 +18,15 @@ public class Array {
         /* Array Decleration*/
         int [] myFirstArray = new int[5];
         /*Memory Allocation */
-        int [] mySecondArray = new int[3];
+        int [] mySecondArray = new int[4];
         /*Array Decleration and memory allocation */
         int[] myThirdArray = {10,20,30,40};
 
-        //Array index -> Position of element /values
-        //starts with zero
+        
         mySecondArray[0] = 10;
         mySecondArray[1]=20;
         mySecondArray[2]=100;
+        mySecondArray[3]=20;
 
         /* Access/store in new  variable */
         int arrayElement = mySecondArray[0];
