@@ -21,7 +21,7 @@
  
  */
 
- public class ConstructorReviseTask {
+public class ConstructorReviseTask {
     public static void main(String[] args) {
         // Creating objects of Song class
         Song song1 = new Song("abc", 3);
