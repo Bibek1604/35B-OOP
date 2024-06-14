@@ -1,11 +1,10 @@
 import java.util.Scanner;
 
 public class Table {
-    public static void mult(int number) {
+    public static void mult(int num) {
         for (int i = 1;i<=10;i++) {
-            System.out.println(number + 'X' + i + "=" +(number*i));
+            System.out.println(num+" X "+i+" = "+i*num);
         }
-        
     }
 
     public static void main(String[] args) {
