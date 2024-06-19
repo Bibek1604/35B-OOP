@@ -1,0 +1,15 @@
+it shows only essential thingls only to uwser. 
+it shows  user the external strctre.
+it hide the internal function
+
+
+Focus on what object deos?
+
+
+
+the fucntion ehich is hidden is known as abstractions.
+ 
+ 
+ abstract  that is used before any making class is known as abstract class
+
+ we cannot make object  in abstract class
