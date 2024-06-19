@@ -1,7 +1,13 @@
 public class Abstractclass {
 
     public static void main(String[] args) {
-        
+        Samsung s1 = new Samsung();
+        s1.sms();
+        s1.call("987687576");
+
+        Apple a1 = new Apple();
+        a1.sms();
+        a1.call("54535435");
     }
 }
 
@@ -44,6 +50,6 @@ class Apple extends SmartPhone{
     @Override
     public boolean call(String number){
         System.out.println("Called by apple"+number);
-        return false;
+        return true;
     }
 }
