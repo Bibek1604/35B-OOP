@@ -1,0 +1,25 @@
+// acception handeling 
+
+
+// to handel program when we recieve any error?
+
+
+
+// after doing acception handeling  we can handel error  and disaply the user friendly error 
+
+
+
+// type sof run time exceptoiojm
+
+// null pointer exception
+// array index out of bound exception
+// class cast exception
+// number format exception
+
+
+
+
+// try block is use to write the code that may throw exception
+// catch block is use to handel the exception 
+// finally block is use to close the resources like file, db connection, network connection etc. 
+// finally block is always executed whether exception is handled or not
