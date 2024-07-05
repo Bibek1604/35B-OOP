@@ -14,23 +14,27 @@ public class Bank {
         
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter the number");
-        int number= scanner.nextInt();
+        System.out.println("Enter the account number:");
+        int number = scanner.nextInt();
+        
+        scanner.nextLine(); // Consume the newline left behind by nextInt()
+        
+        System.out.println("Enter the account holder:");
+        String accountHolder = scanner.nextLine();
+        
+        System.out.println("Enter the initial balance:");
+        int accountBalance = scanner.nextInt();
+        
+        bankaccount account = new bankaccount(number, accountHolder, accountBalance);
 
-        System.out.println("Enter the accountholder");
-        int accountbalance = scanner.nextInt();
-
-        scanner.nextLine();
-
-        System.out.println("Enter the accountholdeer: ");
-        String accountholder = scanner.nextLine();
-
-
-
-        bankaccount ba = new bankaccount();
-        ba.setaccountholder(accountholder);
-        ba.setaccountbalance(accountbalance);
-        ba.setnumber(number);
+        
+        account.deposit(200);
+        System.out.println("New balance after deposit: " + account.getaccountbalance());
+        
+        account.withdraw(100);
+        System.out.println("New balance after withdraw: " + account.getaccountbalance());
+    
+        scanner.close();
     }
 
     
@@ -43,28 +47,17 @@ class bankaccount{
     
 
 
-    public String getaccountholder(){
-        return this.accountholder;
+    public bankaccount(int number, String accountholder, int accountbalance){
+
+        this.accountholder=accountholder;
+        this.accountbalance=accountbalance;
+        this.number=number;
+
+    }
+    public void deposit(double deposit){
+        accountbalance+=deposit;
     }
 
-    public void setaccountholder(String h){
-        this.accountholder = h;
-    }
-    public int getnumber(){
-        return this.number;
-    }
-    public void setnumber(int n){
-        this. number = n;
-    }
-    public int getaccountbalance(){
-        return this.accountbalance;
-    }
-    public void setaccountbalance(int b){
-        this.accountbalance = b;
-    }
-    public void deposit(double amount){
-        this.accountbalance+=amount;
-    }
     public void withdraw(double withdraw){
         if (withdraw > accountbalance) {
             System.out.println("WIthdraw amount is greater");
@@ -74,6 +67,9 @@ class bankaccount{
 
         }
 
+    }
+    public double getaccountbalance(){
+        return accountbalance;
     }
 
 }
