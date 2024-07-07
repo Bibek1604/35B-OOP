@@ -1,6 +1,13 @@
-public class interface {
+public class fusfus {
     public static void main(String[] args){
+        hondacity hc = new hondacity();
+        hc.speed();
+        hc.eats("foods");
 
+        brezza bz = new brezza();
+        bz.speed();
+        bz.eats("foods");
+        
     }
 
 }
@@ -23,7 +30,7 @@ class brezza implements Car{
     }
 }
 
-class hondacity implements car{
+class hondacity implements Car{
     @Override
     public void speed(){
         System.out.println("It has 10 km speed");

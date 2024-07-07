@@ -22,7 +22,7 @@ abstract class SmartPhone{
     abstract void sms();
     abstract public boolean call(String number);
     //abstract ca;;s can have normal function
-
+    
     void imei(){
         System.out.println("Imei numbers here");
     }
@@ -38,7 +38,7 @@ class Samsung extends SmartPhone{
     @Override
     public boolean call(String number){
         System.out.println("Samsung callng to "+number);
-        return  true;
+        return  true; 
     }
 }
 
