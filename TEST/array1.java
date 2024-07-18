@@ -11,7 +11,7 @@ public class array1 {
             System.out.println("character is vowel");
         }
         else{
-            System.out.println("consonenet");
+            System.out.println("consonenet"); 
         }
     }
 
